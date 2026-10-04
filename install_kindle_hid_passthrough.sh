@@ -89,5 +89,4 @@ fi
 
 echo "Done! Rebooting in 5 seconds..."
 sleep 5
-lipc-set-prop com.lab126.powerd reboot 1
 reboot
