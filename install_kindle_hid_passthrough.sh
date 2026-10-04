@@ -63,7 +63,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Archive extracted. Running installer script..."
-FOUND_INSTALL=$(find "$WORK_DIR" -name "install.sh" -type f 2>/dev/null | head -1)
+FOUND_INSTALL=$(find "$WORK_DIR" -path "*/scripts/install.sh" -type f 2>/dev/null | head -1)
 
 if [ "$FOUND_INSTALL" != "" ]; then
     chmod +x "$FOUND_INSTALL"
